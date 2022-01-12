@@ -12,13 +12,16 @@ Requirement for this particular project:-
 3) Jumper wires
 4) Arduino Mega or Uno (ATMEGA 328)
 
+# DEMO video
+https://drive.google.com/file/d/1CV16GmP1x8wY3V3esKLMSvlJt4v85bw8/view?usp=sharing
+
 # Steps
 
 1) Make the circuit connections either by reffering to the Circuit.png or from https://www.tinkercad.com/things/f6a69geZ6ee-arduino-midi/editel?sharecode=py_GTygFzcwvJVROEEDKGq8sP1jU2249GNyL0IIrgSc
 
 2) After completing the circuit open the "MIDIarduinonomain" folder and then the ino file inside it.
 
-3) Add the Stated library from the Manage libraries. If you want to change the number of buttons or the pin corresponding to them, you can change it from this part of the code
+3) Add the Stated library from the Manage libraries. If you want to change the number of buttons or the pin corresponding to them, you can change it from this part of the code (if you use pin 13 you need to uncomment the pin 13 code here and also define the index of that pin (for eg. we use pins 2,5,7,13 so index of pin 13 is 4)
 
 <img width="642" alt="image" src="https://user-images.githubusercontent.com/62216774/149140977-b4658ace-72f5-46a1-bc54-396cf9ef41a2.png">
 
@@ -50,6 +53,19 @@ But if you are increasing the number of buttons you will also have to change the
 
 <img width="483" alt="image" src="https://user-images.githubusercontent.com/62216774/149143738-55d9a438-6e18-4f52-8f84-39e872abbffa.png">
 
+# EXTRA PART
 
+If you want to make proper MIDI keyboard with every note and knobs then :-
+
+Use the same connection as previous circuit but just add the number of buttons you want and potentiometers for knobs to the analog pins.
+
+Instead of MIDIarduinomain Use the MIDiarduinoEXTRA file and open it.
+
+Here along with buttons and their pins , you can also define the number of potentiometers and their corresponding ANALOG pins
+<img width="548" alt="image" src="https://user-images.githubusercontent.com/62216774/149149475-70357792-d5bf-4850-b6f7-ec3cca9519c3.png">
+
+No need to change any other thing in the code and in this one you can add as much buttons you can and they will correspond to the next notes without have to change the code like we had to do in the previous one.
+
+Rest all the process are same and you will get your DIY MIDI Keyboard working.
 
 
