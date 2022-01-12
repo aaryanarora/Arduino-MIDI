@@ -62,6 +62,7 @@ Use the same connection as previous circuit but just add the number of buttons y
 Instead of MIDIarduinomain Use the MIDiarduinoEXTRA file and open it.
 
 Here along with buttons and their pins , you can also define the number of potentiometers and their corresponding ANALOG pins
+
 <img width="548" alt="image" src="https://user-images.githubusercontent.com/62216774/149149475-70357792-d5bf-4850-b6f7-ec3cca9519c3.png">
 
 No need to change any other thing in the code and in this one you can add as much buttons you can and they will correspond to the next notes without have to change the code like we had to do in the previous one.
